@@ -1,0 +1,167 @@
+/* CSSriset */
+h1,h2,h3,h4,ul,li,div,body,p{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* container */
+.container{
+  margin: 0 auto;
+  width: 1170px;
+}
+/* header */
+header{
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 65px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header-logo{
+  float: left;
+}
+.header-logo img{
+  width: 124px;
+  margin-top: 20px;
+}
+.header-login{
+  float: right;
+}
+.header-login a{
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  line-height: 65px;
+  padding: 0 25px;
+  transition: all 0.5s;
+}
+.header-login a:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* top-wrapper */
+.top-wrapper{
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: #fff;
+  padding: 180px 0 100px 0; 
+  text-align: center;
+}
+.top-wrapper h1{
+  font-size: 45px;
+  opacity: 0.7;
+  letter-spacing: 5px;
+}
+.top-wrapper p{
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.btn{
+  color: #fff;
+  padding: 8px 24px;
+  opacity: 0.8;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn:hover{
+  opacity: 1;
+}
+.signup{
+  background-color: #239b76;
+  margin: 15px 0;
+}
+.facebook{
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+.twitter{
+  background-color: #55acee;
+}
+.fa{
+  margin-right: 5px;
+}
+
+/* losson-wrapper */
+.lesson-wrapper{
+  background-color: #F7F7F7;
+  text-align: center;
+  height: 580px;
+}
+.lesson-wrapper h2{
+  color: #5f5d60;
+  font-size: 24px;
+  font-weight: normal;
+  padding: 80px 0 50px 0;
+}
+.lesson{
+  width: 25%;
+  float: left;
+}
+.lesson-icon{
+  position: relative;
+}
+.lesson-icon p{
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  color: #fff;
+}
+.lesson-description{
+  font-size: 13px;
+  color: #b3aeb5;
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* message-wrapper */
+.message-wrapper{
+  text-align: center;
+  padding-bottom: 80px;
+}
+.headhing{
+  color: #5f5d60;
+  padding: 80px 0 50px 0;
+}
+.headhing h3{
+  font-size: 24px;
+  font-weight: normal;
+}
+.headhing p{
+  font-size: 18.72px;
+  font-weight: bold;
+}
+.btn-wrapper a{
+  background-color: #5dca88;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow:0 7px #1a7940;
+  opacity: 0.8;
+}
+.btn-wrapper a:hover{
+  opacity: 1;
+}
+.btn-wrapper a:active{
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* footer */
+footer{
+  padding: 30px 0;
+  border-top:1px solid #EEEEEE;
+}
+footer img{
+  width: 125px;
+}
+footer p{
+  color: #b3aeb5;
+  font-size: 12px;
+}
