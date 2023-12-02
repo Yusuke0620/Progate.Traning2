@@ -1,0 +1,71 @@
+
+*{
+  box-sizing: border-box;
+}
+
+/* ブレイクポイントをmax-width: 1000px; ➡ 1000px以下に適応 タブレット */
+@media(max-width:1000px ) {
+  .lesson{
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  .top-wrapper{
+    padding: 180px 0 100px 0;
+  }
+  .top-wrapper h1 {    
+      font-size: 32px; /* フォントサイズ変更 */
+      }
+  .lesson-wrapper h2 {
+      font-size: 20px; /* フォントサイズ変更 */
+  }
+  .headhing h3 {
+    font-size: 20px;
+  }
+  .headhing p {
+    font-weight: normal;
+  }
+ 
+}
+
+
+
+/* ブレイクポイントをmax-width: 670px; ➡ 670px以下に適応 スマホ */
+@media(max-width: 670px){
+  .container{
+    padding: 0 15px;
+  }
+  .lesson{
+    width: 100%;
+  }
+  footer{
+    text-align: center; /* footerを中央揃え */
+  }
+  .btn{
+    width: 100%; /* btn幅を画面いっぱいに */
+  }
+  .facebook{
+    margin-bottom: 10px;
+  }
+  .top-wrapper{ 
+    text-align: left; /* トップの文字を左詰め */
+    padding-top: 130px;
+  }
+  .message-btn-wrapper a{
+    width: 100%; /* btn幅を画面いっぱいに */
+  }
+  .top-wrapper h1{
+    font-size: 24px; /* フォントサイズ変更 */
+  }
+  .top-wrapper p{
+    font-size: 14px;
+  }
+  .header-login{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  
+
+
+}
