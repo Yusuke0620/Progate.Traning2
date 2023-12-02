@@ -2,19 +2,47 @@
 <html lang="ja">	
 <head>	
 <meta charset="UTF-8">	
-<link rel="stylesheet" href="stylesheet.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Progate.Traning2.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="responsive.css">
 <title>Progate.Traning2</title>	
 </head>	
 <body>
   <!-- header -->
+  <!--  
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaa     ddddddddddddddd     eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaa     ddddddddddddddd     eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaa     ddddddddddddddd     eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr      rrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr      rrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr      rrrrrr
+HHHHHHHHHHHHHHHHHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaaaaa  dddddd      dddddd  eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHHHHHHHHHHHHHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaaaaa  dddddd      dddddd  eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHHHHHHHHHHHHHHHHH  eeeeeeeeeeee  aaaaaaaaaaaaaaaaaa  dddddd      dddddd  eeeeeeeeeeee  rrrrrrrrrrrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr   rrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr   rrrrrr
+HHHHHH         HHHHHH  eee           aaaaaa      aaaaaa  dddddd      dddddd  eee           rrrrrr   rrrrrr
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaa      aaaaaa  dddddddddddddddddd  eeeeeeeeeeee  rrrrrr      rrrrrr
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaa      aaaaaa  dddddddddddddddddd  eeeeeeeeeeee  rrrrrr      rrrrrr
+HHHHHH         HHHHHH  eeeeeeeeeeee  aaaaaa      aaaaaa  dddddddddddddddddd  eeeeeeeeeeee  rrrrrr      rrrrrr
+   -->
   <header>
     <div class="container">
       <div class="header-logo">
         <img src="https://prog-8.com/images/html/advanced/main_logo.png">
       </div>
+      <!-- スマホ用のメニューアイコン※デフォルトでは非表示 -->
+      <a href="#">
+        <span class="fa fa-bars menu-icon"></span>
+      </a>
+      
+
       <div class="header-login">
-        <a href="#">ログイン</a>
+        <a href="#">レッスン</a>
+        <a href="#">新規登録</a>
+        <a href="#" class="login">ログイン</a>
       </div>
     </div>
   </header>
@@ -28,10 +56,12 @@
           <br>
           初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
           
-          <a href="#" class="btn signup">新規登録はこちら</a>
-          <p>or</p>
-          <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-          <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+          <div class="btn-wrapper">
+            <a href="#" class="btn signup">新規登録はこちら</a>
+            <p>or</p>
+            <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+          </div>
     </div>
   </div>
 
@@ -73,6 +103,7 @@
           </div>        
           <p class="lesson-description">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
         </div>
+        <div class="clear"></div>
       </div>
     </div>
   </div>
@@ -84,12 +115,29 @@
         <h3>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h3>
         <p>Let's learn to code, learn to be creative!</p>
       </div>
-      <div class="btn-wrapper">
+      <div class="message-btn-wrapper">
         <a href="#">さっそく開発する</a>
       </div>
     </div>
   </div>
+<!-- 
+ffffffffffff      oooooooooooo         oooooooooooo      tttttttttttttttttt   eeeeeeeeeeee  rrrrrrrrrrrrrrr
+ffffffffffff      oooooooooooo         oooooooooooo      tttttttttttttttttt   eeeeeeeeeeee  rrrrrrrrrrrrrrr
+ffffffffffff      oooooooooooo         oooooooooooo      tttttttttttttttttt   eeeeeeeeeeee  rrrrrrrrrrrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr      rrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr      rrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr      rrrrrr
+fffffffff      ooo            ooo   ooo            ooo         tttttt         eeeeeeeeeeee  rrrrrrrrrrrrrrr
+fffffffff      ooo            ooo   ooo            ooo         tttttt         eeeeeeeeeeee  rrrrrrrrrrrrrrr
+fffffffff      ooo            ooo   ooo            ooo         tttttt         eeeeeeeeeeee  rrrrrrrrrrrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr   rrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr   rrrrrr
+fff            ooo            ooo   ooo            ooo         tttttt         eee           rrrrrr   rrrrrr
+fff               oooooooooooo         oooooooooooo            tttttt         eeeeeeeeeeee  rrrrrr      rrrrrr
+fff               oooooooooooo         oooooooooooo            tttttt         eeeeeeeeeeee  rrrrrr      rrrrrr
+fff               oooooooooooo         oooooooooooo            tttttt         eeeeeeeeeeee  rrrrrr      rrrrrr
 
+ -->
   <!-- footer -->
   <footer>
     <div class="container">
