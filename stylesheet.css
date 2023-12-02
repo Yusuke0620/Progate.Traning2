@@ -9,16 +9,21 @@ li{
 a{
   text-decoration: none;
 }
+.clear{
+  clear: left;
+}
 /* container */
 .container{
   margin: 0 auto;
-  width: 1170px;
+  width: 100%;
+  max-width: 1170px;
 }
 /* header */
 header{
   background-color: rgba(34, 49, 52, 0.9);
   height: 65px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
 }
@@ -31,17 +36,26 @@ header{
 }
 .header-login{
   float: right;
+  
 }
 .header-login a{
-  display: inline-block;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  color: #fff;  
   line-height: 65px;
   padding: 0 25px;
   transition: all 0.5s;
+  float: left;
 }
 .header-login a:hover{
   background-color: rgba(255, 255, 255, 0.5);
+}
+.menu-icon{  
+  color: white; /* アイコン白色 */
+  float: right;  /* 右寄せ */
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+  
 }
 /* top-wrapper */
 .top-wrapper{
@@ -59,6 +73,9 @@ header{
 .top-wrapper p{
   opacity: 0.7;
   margin-bottom: 15px;
+}
+.btn-wrapper{
+  text-align: center;
 }
 .btn{
   color: #fff;
@@ -89,7 +106,7 @@ header{
 .lesson-wrapper{
   background-color: #F7F7F7;
   text-align: center;
-  height: 580px;
+  
 }
 .lesson-wrapper h2{
   color: #5f5d60;
@@ -135,7 +152,7 @@ header{
   font-size: 18.72px;
   font-weight: bold;
 }
-.btn-wrapper a{
+.message-btn-wrapper a{
   background-color: #5dca88;
   display: inline-block;
   padding: 15px 40px;
@@ -144,10 +161,10 @@ header{
   box-shadow:0 7px #1a7940;
   opacity: 0.8;
 }
-.btn-wrapper a:hover{
+.message-btn-wrapper a:hover{
   opacity: 1;
 }
-.btn-wrapper a:active{
+.message-btn-wrapper a:active{
   position: relative;
   top: 7px;
   box-shadow: none;
